@@ -14,7 +14,8 @@ public class HomeController {
 
     @RquestMapping("/tabuada")
     public String tabuada (Mode model){
-        int[] resultado = new int[10]{
+        int[] resultado = new int[10];
+            for(int num = 1;num <= 10;num++) {
             resultado[num - 1] = num *2;
         }
         model.addAttribute("resultado", resultado);
