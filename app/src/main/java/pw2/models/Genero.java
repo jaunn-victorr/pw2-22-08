@@ -6,8 +6,11 @@ import javax.persistence.id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
-
+@Entity
+@Table(name='generos')
 public class Genero {
+    @id
+    @genereatedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String nome;
 
