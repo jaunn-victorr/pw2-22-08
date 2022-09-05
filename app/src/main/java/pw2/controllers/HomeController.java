@@ -12,8 +12,8 @@ public class HomeController {
         return "index";
     }
 
-    @RquestMapping("/tabuada")
-    public String tabuada (Mode model){
+    @RequestMapping("/tabuada")
+    public String tabuada (Model model){
         int[] resultado = new int[10];
             for(int num = 1;num <= 10;num++) {
             resultado[num - 1] = num *2;
