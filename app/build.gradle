@@ -15,8 +15,3 @@ dependencies {
     implementation 'mysql:mysql-connector-java'
     providedRuntime 'org.apache.tomcat.embed:tomcat-embed-jasper'
 }
-
-// application {
-//     // Define the main class for the application.
-//     mainClass = 'pw2.App'
-// }
