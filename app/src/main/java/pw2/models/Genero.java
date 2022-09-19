@@ -2,15 +2,15 @@ package pw2.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.persistence.id;
+import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Entity
-@Table(name='generos')
+@Table(name="generos")
 public class Genero {
-    @id
-    @genereatedValue(strategy=GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String nome;
 
