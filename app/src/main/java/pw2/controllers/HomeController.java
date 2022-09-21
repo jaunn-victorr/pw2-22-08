@@ -9,7 +9,7 @@ public class HomeController {
     @RequestMapping("/")
     public String index(Model model) {
         model.addAttribute("mensagem", "ap leva benga de opala");
-        return "index";
+        return "list";
     }
 
     @RequestMapping("/tabuada")
