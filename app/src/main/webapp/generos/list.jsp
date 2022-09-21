@@ -9,5 +9,17 @@
 </head>
     <body>
         <h1>Gêneros</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>NOME</th>
+            </tr>
+            <C:forEach var="g" items="${generos}">
+                <tr>
+                    <td>${g.id}</td>
+                    <td>${g.nome}</td>
+                </tr>
+            </C:forEach>
+        </table>
     </body>
 </html>
